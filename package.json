@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-express-seed",
+  "version": "1.0.0",
+  "description": "Seed project for APIs using nodejs and express",
+  "main": "index.js",
+  "repository": "https://github.com/RxNT/nodejs-express-seed.git",
+  "author": "RxNT team",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1"
+  }
+}
