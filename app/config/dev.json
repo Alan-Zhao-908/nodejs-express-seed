@@ -1,0 +1,13 @@
+{
+  "application": {
+    "name": "nodejs-express-seed"
+  },
+  "app_env": "dev",
+  "app_port": "8080",
+  "app_route": "/api",
+  "database" : {
+    "mongodb" : {
+      "connection_string": "mongodb://localhost:27017/sandb"
+    }
+  }
+}
