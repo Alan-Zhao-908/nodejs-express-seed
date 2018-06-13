@@ -7,7 +7,13 @@
   "app_route": "/api",
   "database" : {
     "mongodb" : {
-      "connection_string": "mongodb://localhost:27017/sandb"
+      "connection_string": "mongodb://localhost:27017/sandb",
+      "server": "localhost",
+      "port": "27017",
+      "database": "sandb",
+      "user": "RxNT_User",
+      "pass": "password0123456789",
+      "authdb": "admin"
     }
   }
 }
