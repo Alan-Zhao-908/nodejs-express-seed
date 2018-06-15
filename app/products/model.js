@@ -1,3 +1,5 @@
+'use strict'
+
 const mongodb = require('../helpers/mongodb');
 const globals = require('../globals');
 

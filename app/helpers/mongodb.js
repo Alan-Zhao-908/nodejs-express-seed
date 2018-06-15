@@ -1,4 +1,5 @@
-const globals = require('../globals');
+'use strict'
+
 const config = require('../config')
 
 //MongoDB uri to connect

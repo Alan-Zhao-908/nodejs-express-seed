@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Global liabrary for promises
  * @type {bluebird}
