@@ -1,6 +1,7 @@
 'use strict'
 
-const config = require('../config')
+const config = require('../config');
+var globals = require('../globals');
 
 //MongoDB uri to connect
 const dburi = 'mongodb://' + config.database.mongodb.server + ':'
