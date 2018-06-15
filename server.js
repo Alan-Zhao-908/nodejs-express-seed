@@ -3,7 +3,7 @@
 
 var config = require('./app/config')
 var productsCtrl = require('./app/products/controller');
-
+var defaultController = require('./app/default-controller');
 
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -17,22 +17,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-
-//middleware to use for all requests
-router.use((req, res, next) => {
-    console.log('Running middleware code');
-    next();
-});
-
-
-router.get('/', (req, res) => {
-  res.json({ message: 'Root route doesn\'t exists!!!' });
-});
-router.get(config.app_route, (req, res) => {
-  res.json({ message: 'API route doesn\'t exists!!!' });
-});
-app.use('/', router);
-
+//Configure the root route
+app.use('/', defaultController);
+//Adding products route
 app.use(config.app_route, productsCtrl);
 
 
