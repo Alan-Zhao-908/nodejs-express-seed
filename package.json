@@ -8,12 +8,19 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
     "eslint": "^4.19.1",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^5.2.0"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mongoose": "^5.0.15"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --timeout 10000"
   }
 }
